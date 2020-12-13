@@ -194,4 +194,24 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.arnavgupta.net/profiles&amp;value=arnav95600</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arnavgupta.net/posted/@arnav95600/Subject/5fd65f911d2dc85211fa1a3b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arnavgupta.net/posted/@arnav95600/This is my problem/5fd65fba1d2dc85211fa1a3c</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arnavgupta.net/profiles&amp;value=pranav</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
