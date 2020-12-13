@@ -148,11 +148,11 @@ const Single = (props) => {
               />
               <meta
                 property="og:url"
-                content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
+                content={`https://www.futureal.ml/posted/@${user.name}/${posts.subject}/${posts._id}`}
               />
               <meta
                 name="twitter:image"
-                content="https://www.passionatebloggers.me/logo.png"
+                content="https://www.futureal.ml/logo.png"
               />
               <meta
                 property="og:title"
@@ -161,7 +161,7 @@ const Single = (props) => {
               <meta property="og:type" content={`website`} />
               <meta
                 property="og:image"
-                content="https://www.passionatebloggers.me/logo.png"
+                content="https://www.futureal.ml/logo.png"
               />
             </Helmet>
             <link
@@ -205,8 +205,10 @@ const Single = (props) => {
                       style={{
                         backgroundImage:
                           "url(" +
-                          `${process.env.PUBLIC_URL +
-                            "/blog-teaser-default-full_5.jpg"}` +
+                          `${
+                            process.env.PUBLIC_URL +
+                            "/blog-teaser-default-full_5.jpg"
+                          }` +
                           ")",
                       }}
                     />
@@ -277,7 +279,7 @@ const Single = (props) => {
                       variant="secondary"
                       onClick={(e) => modalHandler(true)}
                     >
-                      Comments
+                      Suggestions
                     </Button>
                   </div>
                   <Modal
@@ -287,7 +289,7 @@ const Single = (props) => {
                     keyboard={false}
                   >
                     <Modal.Header closeButton>
-                      <Modal.Title>Comments</Modal.Title>
+                      <Modal.Title>Suggestions</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                       <div
@@ -348,7 +350,7 @@ const Single = (props) => {
                                 <input
                                   required
                                   className="form-control"
-                                  placeholder="type your comment here"
+                                  placeholder="type your suggestion here"
                                   value={typedComment}
                                   name="comment"
                                   onChange={(e) =>
@@ -360,7 +362,7 @@ const Single = (props) => {
                                 className="btn btn-primary btn-block"
                                 type="submit"
                               >
-                                Post
+                                Suggestion
                               </button>
                             </p>
                           </form>

@@ -56,19 +56,16 @@ You can share your queries with Arnav or Infinity Team here"
             content={`
 You can share your queries with Arnav or Infinity Team here`}
           />
-          <meta
-            property="og:url"
-            content={`https://www.passionatebloggers.me/contact`}
-          />
+          <meta property="og:url" content={`https://www.futureal.ml/contact`} />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
           <meta property="og:title" content={`Infinity - Contact`} />
           <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
         </Helmet>
         <link

@@ -134,19 +134,16 @@ class Feed extends Component {
               name="twitter:description"
               content={`YOu can view and edit all your new and old posts here`}
             />
-            <meta
-              property="og:url"
-              content={`https://www.passionatebloggers.me/feed`}
-            />
+            <meta property="og:url" content={`https://www.futureal.ml/feed`} />
             <meta
               name="twitter:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
             <meta property="og:title" content={`Infinity - Feed`} />
             <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
           </Helmet>
           <link

@@ -113,17 +113,17 @@ class Dashboard extends Component {
             />
             <meta
               property="og:url"
-              content={`https://www.passionatebloggers.me/Dashboard`}
+              content={`https://www.futureal.ml/Dashboard`}
             />
             <meta
               name="twitter:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
             <meta property="og:title" content={`Infinity - Dashboard`} />
             <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
           </Helmet>
           <link

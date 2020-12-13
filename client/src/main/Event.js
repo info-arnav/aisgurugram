@@ -77,17 +77,17 @@ const Event = (props) => {
           />
           <meta
             property="og:url"
-            content={`https://www.passionatebloggers.me/projects`}
+            content={`https://www.futureal.ml/projects`}
           />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
           <meta property="og:title" content={`Infinity - All Blogs`} />
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
         </Helmet>
         <link

@@ -72,23 +72,20 @@ const Home = (props) => {
           />
           <meta
             name="description"
-            content="Infinity is a platform for various bloggers to share their posts with various people"
+            content="Infinity here is a platform for various people to discuss about their social problems and henceforth come towards a rational solution"
           />
           <meta
             property="og:description"
-            content="Infinity is a platform for various bloggers to share their posts with various people"
+            content="Infinity here is a platform for various people to discuss about their social problems and henceforth come towards a rational solution"
           />
           <meta
             name="twitter:description"
-            content={`Infinity is a platform for various bloggers to share their posts with various people`}
+            content={`Infinity here is a platform for various people to discuss about their social problems and henceforth come towards a rational solution`}
           />
-          <meta
-            property="og:url"
-            content={`https://www.passionatebloggers.me/`}
-          />
+          <meta property="og:url" content={`https://www.futureal.ml/`} />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
           <meta
             property="og:title"
@@ -97,7 +94,7 @@ const Home = (props) => {
           <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
         </Helmet>
         <link
@@ -293,9 +290,9 @@ const Home = (props) => {
                 id="newImportant"
                 style={{ color: "white", paddingTop: "150px !important" }}
               >
-                Blogs for all{" "}
+                Social Help Group{" "}
               </h2>
-              <p>share your blogs with the world</p>
+              <p>Discuss your issues with the world</p>
               <a
                 href="/register"
                 className="btn btn-outline-light btn-lg"
@@ -310,9 +307,9 @@ const Home = (props) => {
               <div className="block-heading">
                 <h2 className="text-info">About</h2>
                 <p>
-                  Infinity is a platform where various people can share their
-                  blogs with each other they can als follow the users they like.
-                  We will be adding additional features in the future.
+                  Infinity here is a platform for various people to discuss
+                  about their social problems and henceforth come towards a
+                  rational solution
                 </p>
               </div>
             </div>

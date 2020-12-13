@@ -106,19 +106,16 @@ class Login extends Component {
               name="twitter:description"
               content={`Infinity - login here to make your own posts.`}
             />
-            <meta
-              property="og:url"
-              content={`https://www.passionatebloggers.me/login`}
-            />
+            <meta property="og:url" content={`https://www.futureal.ml/login`} />
             <meta
               name="twitter:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
             <meta property="og:title" content={`Infinity - Login`} />
             <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.futureal.ml/logo.png"
             />
           </Helmet>
           <link

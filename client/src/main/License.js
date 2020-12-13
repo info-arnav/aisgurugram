@@ -50,13 +50,10 @@ const License = () => {
             name="twitter:description"
             content={`Infinity sticks to a MIT license`}
           />
-          <meta
-            property="og:url"
-            content={`https://www.passionatebloggers.me/feed`}
-          />
+          <meta property="og:url" content={`https://www.futureal.ml/feed`} />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
           <meta
             property="og:title"
@@ -65,7 +62,7 @@ const License = () => {
           <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content="https://www.futureal.ml/logo.png"
           />
         </Helmet>
         <link

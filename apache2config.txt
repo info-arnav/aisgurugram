@@ -69,10 +69,10 @@
 NameVirtualHost *:443
 
 <VirtualHost *:443>
- ServerName passionatebloggers.me
- ServerAlias www.passionatebloggers.me
+ ServerName futureal.ml
+ ServerAlias www.futureal.ml
  SSLEngine on
- SSLCertificateKeyFile /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/passionatebloggers.me.key
+ SSLCertificateKeyFile /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/futureal.ml.key
  SSLCertificateChainFile /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/bundle.crt
 </VirtualHost>
 

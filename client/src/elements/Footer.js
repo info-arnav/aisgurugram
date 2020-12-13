@@ -24,57 +24,6 @@ class Footer extends Component {
               </ul>
             </div>
             <div className="col-sm-3">
-              <h5>Extensions</h5>
-              <ul>
-                <li>
-                  <a href="https://chrome.google.com/webstore/detail/badbllgllmfcbdebaakkoiehefmmjngh">
-                    BuzzSpot - Chrome
-                  </a>
-                </li>
-                <li>
-                  <a href="https://chrome.google.com/webstore/detail/dajhfhdjfpcomojccfkakenbgnahpmdp">
-                    PassionateBlogger - Chrome
-                  </a>
-                </li>
-                <li>
-                  <a href="https://microsoftedge.microsoft.com/addons/detail/ndjdppjhbollancnchjcpkobgaeibbfm">
-                    ArnavGuptaNet - Edge
-                  </a>
-                </li>
-                <li>
-                  <a href="https://microsoftedge.microsoft.com/addons/detail/dbdnfcbjgjagelfpfngedlbljlciljoc">
-                    BuzzSpot - Edge
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-sm-3">
-              <h5>Social Media</h5>
-              <ul>
-                <li>
-                  <a href="https://www.Instagram.com/infinitybyarnav">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/InfinityByArnav">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/InfinityByArnav/">Twitter</a>
-                </li>
-                <li>
-                  <a
-                    href="
-                https://www.linkedin.com/in/arnav-gupta-0922341a9/"
-                  >
-                    Linkedin
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-sm-3">
               <h5>Legal</h5>
               <ul>
                 <li>

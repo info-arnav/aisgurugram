@@ -42,12 +42,12 @@ server {
 }
 server{
    listen 443;
-   server_name passionatebloggers.me;
+   server_name futureal.ml;
    ssl on;
-   return 301 https://www.passionatebloggers.me$request_uri;
+   return 301 https://www.futureal.ml$request_uri;
    ssl_certificate /home/ubuntu/bundle.crt;
    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
-   ssl_certificate_key /home/ubuntu/passionatebloggers.me.key;
+   ssl_certificate_key /home/ubuntu/futureal.ml.key;
    server_name    localhost;
    root           /usr/share/nginx/html;
 
@@ -64,10 +64,10 @@ server{
 }
 server {
    listen 443;
-   server_name www.passionatebloggers.me;
+   server_name www.futureal.ml;
    ssl on;
    ssl_certificate /home/ubuntu/bundle.crt;
-   ssl_certificate_key /home/ubuntu/passionatebloggers.me.key;
+   ssl_certificate_key /home/ubuntu/futureal.ml.key;
    server_name    localhost;
    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
    root           /usr/share/nginx/html;
@@ -95,10 +95,10 @@ server {
    if ($host = 'www.arnavgupta.net') {
       return 301 https://www.arnavgupta.net$request_uri;
    }
-   if ($host = 'passionatebloggers.me') {
-      return 301 https://www.passionatebloggers.me$request_uri;
+   if ($host = 'futureal.ml') {
+      return 301 https://www.futureal.ml$request_uri;
    }
-   if ($host = 'www.passionatebloggers.me') {
-      return 301 https://www.passionatebloggers.me$request_uri;
+   if ($host = 'www.futureal.ml') {
+      return 301 https://www.futureal.ml$request_uri;
    }
 }

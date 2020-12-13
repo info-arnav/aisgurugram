@@ -386,7 +386,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             let postgres = {
-              loc: `https://www.passionatebloggers.me/posted/@${success.name}/${success.subject}/${success._id}`,
+              loc: `https://www.futureal.ml/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -520,7 +520,7 @@ app.get("*", (req, res) => {
         sessions.findByIdAndUpdate(
           success._id,
           {
-            url1: "passionatebloggers.me",
+            url1: "futureal.ml",
             url2: url.parse(req.url),
           },
           (error, success) => {
@@ -539,7 +539,7 @@ app.get("*", (req, res) => {
             ipAddress: header["x-forwarded-for"]
               ? header["x-forwarded-for"].split(/, /)[0]
               : connection.remoteAddress,
-            url1: "passionatebloggers.me",
+            url1: "futureal.ml",
             url2: url.parse(req.url),
           },
           (error, success) => {
