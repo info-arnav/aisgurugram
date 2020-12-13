@@ -271,114 +271,69 @@ class Dashboard extends Component {
                   <section className="clean-block clean-form dark">
                     <div className="container">
                       <div className="block-heading">
-                        <h2 className="text-info">Verify</h2>
+                        <h2 className="text-info">New Blog</h2>
                       </div>
-                      {requested ? (
-                        <div>
-                          <main className="page registration-page">
-                            <section className="clean-block clean-form dark">
-                              <h1 />
-                              <div className="container">
-                                <div className="block-heading"></div>
-                                <form action="/verify" method="POST">
-                                  <div className="form-group">
-                                    <input
-                                      value={sdata._id}
-                                      className="form-control item"
-                                      type="text"
-                                      id="name"
-                                      name="name"
-                                      hidden
-                                    />
-                                    <label for="blog">Code</label>
-                                    <input
-                                      className="form-control item"
-                                      type="text"
-                                      id="code"
-                                      name="code"
-                                    />
-                                  </div>
-                                  <div className="form-group">
-                                    <button
-                                      className="btn btn-primary btn-block btn-lg"
-                                      type="submit"
-                                    >
-                                      Verify
-                                    </button>
-                                  </div>
-                                </form>
-                                <form onSubmit={this.FSubmit}>
-                                  <div className="form-group">
-                                    <input
-                                      value={sdata._id}
-                                      className="form-control item"
-                                      type="text"
-                                      id="name"
-                                      name="name"
-                                      hidden
-                                    />
-                                    <input
-                                      value={sdata.email}
-                                      className="form-control item"
-                                      type="text"
-                                      id="email"
-                                      name="email"
-                                      hidden
-                                    />
-                                  </div>
-                                  <div className="form-group">
-                                    <button
-                                      className="btn btn-primary btn-block btn-lg"
-                                      type="submit"
-                                    >
-                                      Request Code
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </section>
-                          </main>
+                      <form action="/teams/submit" method="POST">
+                        <div className="form-group">
+                          <input
+                            value={user.name}
+                            className="form-control item"
+                            type="text"
+                            id="name"
+                            name="name"
+                            hidden
+                          />
+                          <input
+                            value={sdata._id}
+                            className="form-control item"
+                            type="text"
+                            id="userId"
+                            name="userId"
+                            hidden
+                          />
                         </div>
-                      ) : (
-                        <div>
-                          <main className="page registration-page">
-                            <section className="clean-block clean-form dark">
-                              <h1 />
-                              <div className="container">
-                                <div className="block-heading"></div>
-                                <form onSubmit={this.FSubmit}>
-                                  <div className="form-group">
-                                    <input
-                                      value={sdata._id}
-                                      className="form-control item"
-                                      type="text"
-                                      id="name"
-                                      name="name"
-                                      hidden
-                                    />
-                                    <input
-                                      value={sdata.email}
-                                      className="form-control item"
-                                      type="text"
-                                      id="email"
-                                      name="email"
-                                      hidden
-                                    />
-                                  </div>
-                                  <div className="form-group">
-                                    <button
-                                      className="btn btn-primary btn-block btn-lg"
-                                      type="submit"
-                                    >
-                                      Request Code
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </section>
-                          </main>
+                        <div className="form-group">
+                          <label for="subject">Subject</label>
+                          <input
+                            className="form-control item"
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                          />
                         </div>
-                      )}
+                        <div className="form-group">
+                          <label for="blog">Blog</label>
+                          <input
+                            className="form-control item"
+                            type="text"
+                            id="blog"
+                            name="blog"
+                            hidden
+                            required
+                            value={draftToHtml(
+                              convertToRaw(editorState.getCurrentContent())
+                            )}
+                          />
+                          <div class="wysiwyg">
+                            <Editor
+                              className="wsiwyg"
+                              editorState={editorState}
+                              wrapperClassName="demo-wrapper"
+                              editorClassName="demo-editor"
+                              onEditorStateChange={this.onEditorStateChange}
+                            />
+                          </div>
+                        </div>
+                        <div className="form-group">
+                          <button
+                            className="btn btn-primary btn-block btn-lg"
+                            type="submit"
+                          >
+                            Submit Form
+                          </button>
+                        </div>
+                      </form>
                     </div>
                   </section>
                 </main>
