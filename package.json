@@ -1,0 +1,44 @@
+{
+  "engines": {
+    "node": ">=15.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "mern-auth",
+  "version": "3.0.0",
+  "description": "Mern Auth Example",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "cd client && yarn && yarn build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/node": "^5.28.0",
+    "@sentry/tracing": "^5.28.0",
+    "algoliasearch": "^4.4.0",
+    "aws-sdk": "^2.747.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.2.0",
+    "express-ip": "^1.0.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.3.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pm2": "^4.5.0",
+    "validator": "^10.9.0",
+    "xml2js": "^0.4.23",
+    "yarn": "^1.22.10"
+  }
+}
